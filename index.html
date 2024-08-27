@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body class="body">
+    <div class="container">
+        <!-- Sección izquierda -->
+        <section class="section-left">
+            <img src="assets/Logo Alura.png" alt="Logo Alura" class="section-header-logo">
+            <section class="section-left-a">
+                <textarea class="section-left-textArea" placeholder="Ingrese el texto aqui." id="textoIngresado"></textarea>
+            </section>
+            <section class="section-left-b">
+                <div class="section-left-advertencia">
+                    <img src="assets/Advertencia.png" alt="Advertencia" class="section-left-advertencia-img">
+                    <p class="section-left-advertencia-p">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="section-buttons">
+                    <button class="section-left__button encriptar" onclick="encriptarTexto();">Encriptar</button>
+                    <button class="section-left__button desencriptar" onclick="desencriptarTexto();">Desencriptar</button>
+                </div>
+            </section>
+        </section>
+
+        <!-- Sección derecha -->
+        <section class="section-right">
+            <div class="section-right-a" id="respuesta">
+                <img src="assets/muñeco.png" alt="Muñeco" class="section-right-img">
+                <h3 class="section-right__subtitulo">Ningún mensaje fue encontrado</h3>
+                <p class="section-right__parrafo">Ingresa el texto que deseas encriptar o desencriptar.</p>
+            </div>
+            <div class="section-right-b">
+                <button onclick="copiarTexto()" class="section-right-button" id="botonCopiar">Copiar</button>
+            </div>
+        </section>
+    </div>
+    <script src="Js/Encriptar.js"></script>
+    <script src="Js/Desencriptar.js"></script>
+    <script src="Js/copiarTexto.js"></script>
+</body>
+</html>
